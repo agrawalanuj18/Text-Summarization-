@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Summarizer</title>
+  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+  <body>
+    <header>
+        <h2 class="logo">Text Summarizer</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#">Login</a>
+            <!-- <a href="#">Contact</a> -->
+        </nav>
+    </header>
+  
+  
+    <section class="parallax">
+        <img src="{{url_for('static', filename='hill1.png')}}" id="hill1"/>
+        <img src="{{url_for('static', filename='hill2.png')}}" id="hill2"/>
+        <img src="{{url_for('static', filename='hill3.png')}}" id="hill3"/>
+        <img src="{{url_for('static', filename='hill4.png')}}" id="hill4"/>
+        <img src="{{url_for('static', filename='hill5.png')}}" id="hill5"/>
+        <img src="{{url_for('static', filename='tree.png')}}" id="tree"/>
+    
+
+        <section>
+        <div class="container srt">
+          <form action="/analyze"  method="POST">
+            <label for="text">Enter your text:</label><br />
+            <textarea id="text" name="text" rows="10" cols="50"></textarea><br />
+            <input type="submit" value="Summarize" />
+          </form>
+
+            <div>
+          
+                
+                  
+            </section>
+  
+       
+       
+    
+          <img src="{{url_for('static', filename='leaf.png')}}" id="leaf"/>
+          <img src="{{url_for('static', filename='plant.png')}}" id="plant"/>
+      </section>
+
+      <section class="sec" id="About">
+        <h1 class="logo" >About</h1>
+        <br>
+        <br>
+        <h2>NLP text summarization</h2>
+        <p>
+          Text summarization is the process of condensing a large document into a shorter version while preserving the most important information. It has become a vital research area due to the exponential increase in the amount of textual information available on the internet. We are producers and consumers of data at the same time. Text summarization has been extensively used in various fields like science, medicine, law, engineering, etc. Researchers have focused on generating summaries of doctor's prescriptions, and that has been proved very useful to patients. Similarly, long news articles have been summarized and this way readers can gain a lot of information on several topics within a short span of time. This literature review aims to provide an overview of text summarization through Natural Language Processing (NLP) in Machine Learning (ML).<br><br>
+          <h2>NLP in Text Summarization:
+          </h2>
+        <p>
+          NLP techniques play a crucial role in text summarization. These techniques include part-of-speech tagging, Named Entity Recognition (NER), and semantic analysis. Part-of-speech tagging involves labelling words in a sentence with their respective parts of speech, such as nouns, verbs, and adjectives. NER involves identifying and categorizing named entities, such as people, organizations, and locations. The semantic analysis involves identifying the meaning of words and their relationships with other words in the sentence.<br><br>
+
+        </p>
+
+    </section>
+
+      <script src="{{url_for('static', filename='js/index.js')}}"></script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      
+   
+  </body>
+</html>
